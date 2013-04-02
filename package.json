@@ -1,8 +1,7 @@
 {
-  "name": "bryanston",
-  "version": "0.0.0",
-  "description": "a helper to bryanston",
-  "main": "index.js",
+  "name": "angular-td",
+  "version": "0.0.1",
+  "description": "Start tdd angular app",
   "scripts": {
     "postinstall": "node_modules/.bin/grunt setup"
   },
