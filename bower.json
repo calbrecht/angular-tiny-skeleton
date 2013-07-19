@@ -1,12 +1,15 @@
 {
-  "name": "angular-td",
-  "version": "0.0.1",
+  "name": "angular-tiny-skeleton",
+  "version": "0.0.2",
   "ignore": [
     "**/.*",
     "node_modules",
-    "components"
+    "lib"
   ],
-  "devDependencies": {
+  "dependencies": {
     "angular": "*"
+  },
+  "devDependencies": {
+    "angular-mocks": "*"
   }
 }
