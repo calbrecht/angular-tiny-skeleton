@@ -7,60 +7,47 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         karma: {
             options: {
-                // does not serve any purpose but to fix a grunt-karma error
-                configFile: 'node_modules/grunt-karma/karma.conf.js',
                 // setting urlRoot to __dirname serves e2e browser().navigateTo calls
                 urlRoot: __dirname + '/',
                 basePath: __dirname,
-                singleRun: true,
-                autoWatch: false,
                 logLevel: 'info',
                 exclude: [
                     '**/*.min.js'
-                ]
+                ],
+                browsers: ['PhantomJS']
             },
             "e2e-dev": {
                 options: {
-                    files: [
-                        'node_modules/karma/adapter/lib/angular-scenario.js',
-                        'node_modules/karma/adapter/angular-scenario.js',
-                        //watch for reload but do not include into html
-                        {pattern: '**/*.html', included: false},
-                        {pattern: '**/*.css', included: false},
-                        'lib/angular/angular.js',
-                        'lib/**/*.js',
-                        'src/**/*.js',
-                        'specs/e2e/**/*.js'
-                    ],
-                    browsers: ['PhantomJS'],
+                    configFile: "specs/e2e.karma.conf.js",
                     singleRun: false,
                     autoWatch: true
                 }
             },
             "unit-dev": {
                 options: {
-                    files: [
-                        'node_modules/karma/adapter/lib/jasmine.js',
-                        'node_modules/karma/adapter/jasmine.js',
-                        //watch for reload but do not include into html
-                        {pattern: '**/*.html', included: false},
-                        'lib/angular/angular.js',
-                        'lib/**/*.js',
-                        'src/**/*.js',
-                        'specs/unit/**/*.js'
-                    ],
-                    browsers: ['PhantomJS'],
+                    configFile: "specs/unit.karma.conf.js",
                     singleRun: false,
                     autoWatch: true
+                }
+            },
+            "e2e-qa": {
+                options: {
+                    configFile: "specs/e2e.karma.conf.js",
+                    singleRun: true,
+                    autoWatch: false
+                }
+            },
+            "unit-qa": {
+                options: {
+                    configFile: "specs/unit.karma.conf.js",
+                    singleRun: true,
+                    autoWatch: false
                 }
             }
         }
     });
-
-
-    // Default task(s).
-    grunt.registerTask('test:unit-dev', ['karma:unit-dev']);
-    grunt.registerTask('test:e2e-dev',  ['karma:e2e-dev']);
+    
+    grunt.registerTask('test:qa', ['karma:unit-qa','karma:e2e-qa']);
 
     // Load the plugins provided by npm
     grunt.loadNpmTasks('grunt-karma');
