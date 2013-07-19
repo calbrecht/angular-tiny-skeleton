@@ -1,5 +1,5 @@
     $ npm install
-    $ node_modules/.bin/bower install
-    $ PHANTOMJS_BIN=node_modules/.bin/phantomjs node_modules/.bin/grunt test:unit-dev
+    $ node_modules/.bin/grunt test:unit-dev
+    $ node_modules/.bin/grunt e2e:unit-dev
 
-Put a test in test/unit directory
+Put more test in specs/{unit,e2e} directory
