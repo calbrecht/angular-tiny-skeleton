@@ -1,5 +1,6 @@
     $ npm install
-    $ node_modules/.bin/grunt test:unit-dev
-    $ node_modules/.bin/grunt e2e:unit-dev
+    $ node_modules/.bin/grunt karma:unit-dev
+    # or
+    $ node_modules/.bin/grunt karma:e2e-dev
 
 Put more test in specs/{unit,e2e} directory
