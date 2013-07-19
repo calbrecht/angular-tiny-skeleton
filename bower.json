@@ -7,9 +7,9 @@
     "lib"
   ],
   "dependencies": {
-    "angular": "*"
+    "angular": "1.0.*"
   },
   "devDependencies": {
-    "angular-mocks": "*"
+    "angular-mocks": "1.0.*"
   }
 }

@@ -10,14 +10,14 @@
   "author": "",
   "license": "BSD",
   "dependencies": {
-    "bower": "*"
+    "bower": "0.10.*"
   },
   "devDependencies": {
-    "grunt-cli": "*",
-    "grunt": "*",
-    "karma": "*",
-    "grunt-karma": "*",
-    "phantomjs": "*"
+    "grunt-cli": "0.1.*",
+    "grunt": "0.4.*",
+    "karma": "0.8.*",
+    "grunt-karma": "0.4.*",
+    "phantomjs": "1.9.*"
   },
   "readmeFilename": "README.md"
 }
