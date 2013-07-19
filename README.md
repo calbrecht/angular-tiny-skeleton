@@ -1,3 +1,5 @@
+"!https://travis-ci.org/calbrecht/angular-tiny-skeleton.png!":https://travis-ci.org/calbrecht/angular-tiny-skeleton
+
     $ npm install
     $ node_modules/.bin/grunt karma:unit-dev
     # or
