@@ -1,23 +1,22 @@
 {
-  "name": "angular-td",
-  "version": "0.0.1",
+  "name": "angular-tiny-skeleton",
+  "version": "0.0.2",
   "description": "Start tdd angular app",
   "scripts": {
-    "postinstall": "node_modules/.bin/grunt setup"
+    "postinstall": "node_modules/.bin/bower install"
   },
   "repository": "",
   "author": "",
   "license": "BSD",
-  "dependencies": {},
+  "dependencies": {
+    "bower": "*"
+  },
   "devDependencies": {
     "grunt-cli": "*",
     "grunt": "*",
-    "grunt-mkdir": "*",
     "karma": "*",
     "grunt-karma": "*",
-    "phantomjs": "*",
-    "bower": "*",
-    "grunt-contrib-connect": "*"
+    "phantomjs": "*"
   },
   "readmeFilename": "README.md"
 }
