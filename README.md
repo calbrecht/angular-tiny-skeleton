@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/calbrecht/angular-tiny-skeleton.png)](https://travis-ci.org/calbrecht/angular-tiny-skeleton)
+[![Build Status](https://travis-ci.org/calbrecht/angular-tiny-skeleton.png?branch=master)](https://travis-ci.org/calbrecht/angular-tiny-skeleton?branch=master)
 
 On Linux
 --------
@@ -6,7 +6,7 @@ On Linux
 
 On Windows
 ----------
-	$ npm.cmd install
+    $ npm.cmd install
 
 Everywhere
 ----------

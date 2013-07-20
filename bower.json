@@ -1,6 +1,6 @@
 {
   "name": "angular-tiny-skeleton",
-  "version": "0.0.2",
+  "version": "0.8.7",
   "ignore": [
     "**/.*",
     "node_modules",

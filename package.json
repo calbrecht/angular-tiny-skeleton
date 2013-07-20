@@ -1,13 +1,16 @@
 {
   "name": "angular-tiny-skeleton",
-  "version": "0.0.2",
+  "version": "0.8.7",
   "description": "Start tdd angular app",
   "scripts": {
 	"postinstall": "bower install",
 	"test": "grunt test:qa"
   },
-  "repository": "",
-  "author": "",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/calbrecht/angular-tiny-skeleton.git"
+  },
+  "author": "christian.albrecht@mayflower.de",
   "license": "BSD",
   "dependencies": {
     "bower": "0.10"
@@ -21,3 +24,4 @@
   },
   "readmeFilename": "README.md"
 }
+
