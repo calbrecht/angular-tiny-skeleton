@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/calbrecht/angular-tiny-skeleton.png?branch=master)](https://travis-ci.org/calbrecht/angular-tiny-skeleton?branch=master)
+[![Build Status](https://travis-ci.org/calbrecht/angular-tiny-skeleton.png?branch=stable)](https://travis-ci.org/calbrecht/angular-tiny-skeleton?branch=stable)
 
 On Linux
 --------
