@@ -1,4 +1,8 @@
-process.env.PHANTOMJS_BIN = __dirname + '/node_modules/phantomjs/lib/phantom/bin/phantomjs';
+var isWin = /Windows/.test(require('os').type()),
+    phantomLibDir = __dirname + '/node_modules/phantomjs/lib/phantom/';
+
+// set PHANTOMJS_BIN for karma
+process.env.PHANTOMJS_BIN =  phantomLibDir + (isWin ? 'phantomjs.exe' : 'bin/phantomjs');
 
 module.exports = function(grunt) {
 
@@ -7,8 +11,8 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         karma: {
             options: {
-                // setting urlRoot to __dirname serves e2e browser().navigateTo calls
-                urlRoot: __dirname + '/',
+                // setting urlRoot to /base/ serves e2e browser().navigateTo calls relative to basePath
+                urlRoot: '/base/',
                 basePath: __dirname,
                 logLevel: 'info',
                 exclude: [
