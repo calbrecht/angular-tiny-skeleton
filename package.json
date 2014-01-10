@@ -1,6 +1,6 @@
 {
   "name": "angular-tiny-skeleton",
-  "version": "0.8.7",
+  "version": "0.8.8",
   "description": "Start tdd angular app",
   "scripts": {
 	"postinstall": "bower install",
@@ -13,13 +13,13 @@
   "author": "christian.albrecht@mayflower.de",
   "license": "BSD",
   "dependencies": {
-    "bower": "0.10"
+    "bower": "1.2.8"
   },
   "devDependencies": {
     "grunt-cli": "0.1",
     "grunt": "0.4",
-    "karma": "0.8",
-    "grunt-karma": "0.4",
+    "karma": "0.10",
+    "grunt-karma": "0.6",
     "phantomjs": "1.9"
   },
   "readmeFilename": "README.md"
