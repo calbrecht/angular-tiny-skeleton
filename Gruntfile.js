@@ -1,8 +1,10 @@
-var isWin = /Windows/.test(require('os').type()),
-    phantomLibDir = __dirname + '/node_modules/phantomjs/lib/phantom/';
+if (!process.env.PHANTOMJS_BIN) {
+    var isWin = /Windows/.test(require('os').type()),
+        phantomLibDir = __dirname + '/node_modules/phantomjs/lib/phantom/';
 
-// set PHANTOMJS_BIN for karma
-process.env.PHANTOMJS_BIN =  phantomLibDir + (isWin ? 'phantomjs.exe' : 'bin/phantomjs');
+    // set PHANTOMJS_BIN for karma
+    process.env.PHANTOMJS_BIN =  phantomLibDir + (isWin ? 'phantomjs.exe' : 'bin/phantomjs');
+}
 
 module.exports = function(grunt) {
 
