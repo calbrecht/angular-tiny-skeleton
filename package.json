@@ -13,12 +13,13 @@
   "author": "christian.albrecht@mayflower.de",
   "license": "BSD",
   "dependencies": {
-    "bower": "1.2.8"
+    "bower": "1.2"
   },
   "devDependencies": {
     "grunt-cli": "0.1",
     "grunt": "0.4",
     "karma": "0.10",
+    "karma-ng-scenario": "0.1",
     "grunt-karma": "0.6",
     "phantomjs": "1.9"
   },
