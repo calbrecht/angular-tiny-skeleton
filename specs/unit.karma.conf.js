@@ -6,8 +6,8 @@ module.exports = function(config) {
         files: [
             //watch for reload but do not include into html
             {pattern: '**/*.html', included: false},
-            'lib/angular/angular.js',
-            'lib/**/*.js',
+            'bower_components/angular/angular.js',
+            'bower_components/**/*.js',
             'src/**/*.js',
             'specs/unit/**/*.js'
         ]

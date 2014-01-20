@@ -1,0 +1,5 @@
+1.0.0 Mon Jan 20 2014 11:53:14 GMT+0100 (CET)
+  - Fix configs for newer karma
+  - Rename lib to bower_components
+  - Add tasks for auto updating packages
+  - Add concrete package versions

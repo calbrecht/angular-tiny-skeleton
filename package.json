@@ -1,28 +1,26 @@
 {
   "name": "angular-tiny-skeleton",
-  "version": "0.8.8",
+  "version": "1.0.0-2",
   "description": "Start tdd angular app",
   "scripts": {
-	"postinstall": "bower install",
-	"test": "grunt test:qa"
+    "postinstall": "bower install",
+    "test": "grunt test:qa"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/calbrecht/angular-tiny-skeleton.git"
+    "type": "git",
+    "url": "https://github.com/calbrecht/angular-tiny-skeleton.git"
   },
   "author": "christian.albrecht@mayflower.de",
   "license": "BSD",
-  "dependencies": {
-    "bower": "1.2"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "grunt-cli": "0.1",
-    "grunt": "0.4",
-    "karma": "0.10",
-    "karma-ng-scenario": "0.1",
-    "grunt-karma": "0.6",
-    "phantomjs": "1.9"
+    "bower": "~1.2.8",
+    "grunt": "~0.4.2",
+    "grunt-cli": "~0.1.11",
+    "grunt-karma": "~0.6.2",
+    "karma": "~0.10.9",
+    "karma-ng-scenario": "~0.1.0",
+    "phantomjs": "~1.9.2-6"
   },
   "readmeFilename": "README.md"
 }
-
