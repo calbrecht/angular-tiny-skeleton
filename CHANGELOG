@@ -1,3 +1,9 @@
+1.0.0-3 Sat Feb 01 2014 07:41:15 GMT+0100 (CET)
+  Fix Grunt task latest:finally, collect real updated packages
+  Auto updated packages:
+  - phantomjs@1.9.7-1
+  - grunt-cli@0.1.13
+  - angular#1.2.10
 1.0.0 Mon Jan 20 2014 11:53:14 GMT+0100 (CET)
   - Fix configs for newer karma
   - Rename lib to bower_components

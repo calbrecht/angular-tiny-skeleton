@@ -127,10 +127,10 @@ module.exports = function(grunt) {
     });
 
     grunt.registerTask('latest:finally', 'Write CHANGELOG, increase build number.', function() {
-        //this.requires('latest:bower');
+        this.requires('latest:bower');
 
         var fs = require('fs'),
-            updated = ['p1','p2'],//(grunt.option('npm.updated') || []).concat(grunt.option('bower.updated') || []),
+            updated = (grunt.option('npm.updated') || []).concat(grunt.option('bower.updated') || []),
             done = this.async();
 
         if (updated.length) {
