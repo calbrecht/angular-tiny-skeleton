@@ -1,3 +1,6 @@
+1.0.0-4 Sat Feb 08 2014 08:06:22 GMT+0100 (CET)
+  Auto updated packages:
+  - angular#1.2.12
 1.0.0-3 Sat Feb 01 2014 07:41:15 GMT+0100 (CET)
   Fix Grunt task latest:finally, collect real updated packages
   Auto updated packages:
